@@ -35,9 +35,7 @@ const LoginForm = () => {
 
             <div className="alt-login">
                 <div className="github"></div>
-                <div className="microsoft">
-
-                </div>
+                <div className="microsoft"></div>
             </div>
 
             <div className={popupStyle}>

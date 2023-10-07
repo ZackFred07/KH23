@@ -13,7 +13,7 @@ export default function App() {
         <a className="logo" href="/game">Game Name</a>
         <nav className="navbar">
           <a href="/home">Home</a>
-          <a href="/about">Dashboard</a>
+          <a href="/dashboard">Dashboard</a>
           <a href="/">Login</a>
           <a href='/register'>Register</a>
         </nav>

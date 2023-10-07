@@ -11,7 +11,7 @@ const {
 	userJoin,
 	getCurrentUser,
 	userLeave,
-	getRoomUsers,
+	getCategoryUsers,
 } = require("./utils/users");
 
 const app = express();
@@ -32,26 +32,26 @@ const botName = "ChatCord Bot";
 // Run when client connects
 io.on("connection", (socket) => {
 	console.log(io.of("/").adapter);
-	socket.on("joinRoom", ({ username, room }) => {
-		const user = userJoin(socket.id, username, room);
+	socket.on("joinCategory", ({ username, category }) => {
+		const user = userJoin(socket.id, username, category);
 
-		socket.join(user.room);
+		socket.join(user.category);
 
 		// Welcome current user
 		socket.emit("message", formatMessage(botName, "Welcome to ChatCord!"));
 
 		// Broadcast when a user connects
 		socket.broadcast
-			.to(user.room)
+			.to(user.category)
 			.emit(
 				"message",
 				formatMessage(botName, `${user.username} has joined the chat`)
 			);
 
-		// Send users and room info
-		io.to(user.room).emit("roomUsers", {
-			room: user.room,
-			users: getRoomUsers(user.room),
+		// Send users and category info
+		io.to(user.category).emit("categoryUsers", {
+			category: user.category,
+			users: getCategoryUsers(user.category),
 		});
 	});
 
@@ -59,7 +59,7 @@ io.on("connection", (socket) => {
 	socket.on("chatMessage", (msg) => {
 		const user = getCurrentUser(socket.id);
 
-		io.to(user.room).emit("message", formatMessage(user.username, msg));
+		io.to(user.category).emit("message", formatMessage(user.username, msg));
 	});
 
 	// Runs when client disconnects
@@ -67,15 +67,15 @@ io.on("connection", (socket) => {
 		const user = userLeave(socket.id);
 
 		if (user) {
-			io.to(user.room).emit(
+			io.to(user.category).emit(
 				"message",
 				formatMessage(botName, `${user.username} has left the chat`)
 			);
 
-			// Send users and room info
-			io.to(user.room).emit("roomUsers", {
-				room: user.room,
-				users: getRoomUsers(user.room),
+			// Send users and category info
+			io.to(user.category).emit("categoryUsers", {
+				category: user.category,
+				users: getCategoryUsers(user.category),
 			});
 		}
 	});

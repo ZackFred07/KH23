@@ -36,7 +36,7 @@ const LoginForm = () => {
             <div className="alt-login">
                 <div className="github"></div>
                 <div className="microsoft">
-                 
+
                 </div>
             </div>
 
@@ -44,7 +44,7 @@ const LoginForm = () => {
                 <h3>Login Failed</h3>
                 <p>Username or password incorrect</p>
             </div>
-            
+
         </div>
 
         </div>

@@ -1,9 +1,8 @@
-import LoginForm from './pages/login';
-import SignUpForm from './pages/register';
-import './App.css';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
-
+import LoginForm from "./pages/login";
+import SignUpForm from "./pages/register";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Game from "./pages/Game";
 
 export default function App() {
   return (

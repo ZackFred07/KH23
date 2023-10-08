@@ -1,6 +1,6 @@
 body,
 html,
-#game {
+.Game {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -8,4 +8,19 @@ html,
 
 body {
   font-family: sans-serif;
+}
+loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Adjust the height of the loading bar */
+  background-color: #ccc; /* Background color of the loading bar container */
+  z-index: 9999; /* Make sure the loading bar is on top of other content */
+}
+
+.loading-bar {
+  height: 100%;
+  background-color: #007acc; /* Loading bar color */
+  transition: width 0.2s ease; /* Add a smooth transition effect to the loading bar */
 }

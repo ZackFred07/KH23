@@ -1,0 +1,89 @@
+# Blender 3.6.4 MTL File: 'GameVillage_mini.blend'
+# www.blender.org
+
+newmtl Fire_Vol_Mat
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+Pr 0.400000
+Pm 0.000000
+
+newmtl Flames_from_Fire_Wallpaper_18
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+d 0.690000
+illum 9
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd Flames_from_Fire_Wallpaper_18.jpg
+map_Ke Flames_from_Fire_Wallpaper_18.jpg
+
+newmtl Oak_Wood
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd oak_diffuse.png
+map_Pm oak_metalness.jpg
+map_Pr oak_roughness.jpg
+map_Bump -bm 1.000000 oak_normal.jpg
+
+newmtl bark.001
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd logBark.jpg
+
+newmtl metal_rusty_01
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd -s 4 4 4 metal_rusty_COLOR_2k.jpg
+map_Pm -s 4 4 4 metal_rusty_METALLIC_2k.jpg
+map_Pr -s 4 4 4 metal_rusty_ROUGH_2k.jpg
+map_Bump -s 4 4 4 -bm 1.000000 metal_rusty_NORMAL_2k.jpg
+
+newmtl pine-wood_03
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd pine-wood_03.png

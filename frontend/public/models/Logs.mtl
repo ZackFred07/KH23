@@ -1,0 +1,197 @@
+# Blender 3.6.4 MTL File: 'GameVillage_mini.blend'
+# www.blender.org
+
+newmtl 3DModel_Retopo.001
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.002
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.003
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.004
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.005
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.006
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.007
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.008
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.009
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.010
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.011
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.012
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg
+
+newmtl 3DModel_Retopo.013
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd 3DModel_Retopo.jpg
+map_Pr 3DModel_Retopo_Roughness.jpg

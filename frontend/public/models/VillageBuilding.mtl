@@ -1,0 +1,18 @@
+# Blender 3.6.4 MTL File: 'GameVillage_mini.blend'
+# www.blender.org
+
+newmtl villa
+Ks 0.040909 0.040909 0.040909
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd houseColor3.jpg
+map_Pm houseMetallic.jpg
+map_Pr houseRough.jpg
+map_Bump -bm 1.000000 houseNor.jpeg

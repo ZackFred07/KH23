@@ -8,6 +8,10 @@ h1{
     color: #613dc1;
 }
 
+input{
+    color: black;
+}
+
 
 .page {
     height: 100vh;
@@ -50,14 +54,14 @@ h1{
 }
 
 .github{background-image: url('../assets/github-icon.webp');}
-.microsoft{background-image: url('../assets/microsoft.png');}
+.discord{background-image: url('../assets/discord.png');}
 
 .github:hover{
     transform: scale(1.05);
     transition-duration: 0.5s;
 }
 
-.microsoft:hover{
+.discord:hover{
     transform: scale(1.05);
     transition-duration: 0.5s;
 }

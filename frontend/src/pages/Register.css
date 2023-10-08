@@ -40,7 +40,6 @@ body{
 }
 
 .register_inputs{
-    margin-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +51,12 @@ body{
     display: flex;
     align-items: center;
     margin: 5px;
-    width: 20em;
+    width: 25em;
+    color: black;
+}
+
+.register_input input{
+    color: black;
 }
 
 .register_input img{

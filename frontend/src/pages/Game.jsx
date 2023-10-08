@@ -41,63 +41,59 @@ const Scene = ({ ...props }) => {
 	);
 };
 
-const Homie = ({ ...props }) => {
+const Homie = ({rotation,position, ...props }) => {
 	const group = useRef();
 	const gltf = useLoader(GLTFLoader, "/models/Poly_Character.gltf");
 
 	return (
-		<group
-			ref={group}
-			scale={[0.25, 0.25, 0.25]}
-			rotation={[Math.PI / 2, 0, 0]}>
-			<primitive object={gltf.scene} />
+		<group ref={group}>
+			<primitive
+				object={gltf.scene}
+				scale={[0.25, 0.25, 0.25]}
+				rotation={[Math.PI / 2 + rotation[0], rotation[1], Math.PI / 2 + rotation[2]]}
+				position={[0+position[0], 2+position[1], 2+position[2]]}
+			/>
 		</group>
 	);
 };
 
-// const CircleOfHomies = ({ numHomies, radius }) => {
-// 	const homies = [];
+// No work :(
+const CircleOfHomies = ({ numHomies, radius }) => {
+	const homies = [];
 
-// 	for (let i = 0; i < numHomies; i++) {
-// 		const angle = (i / numHomies) * Math.PI * 2;
-// 		const x = radius * Math.cos(angle);
-// 		const z = radius * Math.sin(angle);
+	for (let i = 0; i < numHomies; i++) {
+		const angle = (i / numHomies) * Math.PI * 2; // Calculate the angle for each Homie
+		const x = radius * Math.cos(angle); // Calculate the x position
+		const z = radius * Math.sin(angle); // Calculate the z position
 
-// 		// Calculate the rotation to face the direction of orbit
-// 		const rotation = [0, angle - Math.PI / 2, 0];
+		homies.push(
+		  <Homie
+			key={i}
+			position={[x, 0, z]}
+			rotation={[0, angle, 0]}
+			radius={radius}
+		  />
+		);
+	  }
 
-// 		homies.push(<Homie key={i} position={[x, 0, z]} rotation={rotation} radius={radius} />);
-// 	}
 
-// 	return <>{homies}</>;
-// };
+
+	return <>{homies}</>;
+};
 
 export default function Game() {
 	const [isLoading, setIsLoading] = useState(true);
-	setTimeout(() => {
-		setIsLoading(false);
-	}, 5);
 
 	const CameraPosition = new Vector3(0, 6, 15);
 	return (
 		<div className="Game">
-			{isLoading ? (
-				<LoadingScreen />
-			) : (
-				<Canvas camera={{ position: CameraPosition }}>
-					<Suspense fallback={null}>
-						<Scene />
-						<Environment preset="forest" background />
-						<Homie
-							key={0}
-							scale={0.25}
-							position={[0, 0, 20]}
-							rotation={[0, 0, 0]}
-							radius={10}
-						/>
-					</Suspense>
-				</Canvas>
-			)}
+			<Canvas camera={{ position: CameraPosition }}>
+				<Suspense fallback={null}>
+					<Scene />
+					<Environment preset="forest" background />
+					<CircleOfHomies numHomies={7} radius={20}/>
+				</Suspense>
+			</Canvas>
 		</div>
 	);
 }

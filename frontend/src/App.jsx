@@ -9,7 +9,7 @@ export default function App() {
     
       <div>
         <div className='header'>
-        <a className="logo" href="/game">Game Name</a>
+        <a className="logo" href="/game"></a>
         <nav className="navbar">
           <a href="/">Login</a>
           <a href='/register'>Register</a>
@@ -18,8 +18,9 @@ export default function App() {
         <Router>
 
         <Routes>
-        <Route exact path='/' element={<LoginForm/>}/>
-        <Route path='/register' element={<SignUpForm/>}/>
+          <Route exact path='/' element={<LoginForm/>}/>
+          <Route path='/register' element={<SignUpForm/>}/>
+          <Route path='/game' element={<Game/>}/>
         </Routes>
         </Router>
       </div>

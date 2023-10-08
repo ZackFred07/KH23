@@ -9,14 +9,15 @@ const LoginForm = () => {
 
     const popup = () => {
         showPopup("login-popup")
-        setTimeout(() => showPopup("hide"), 3000)
+        setTimeout(() => showPopup("hide"), 3000);
+        window.location.href = 'http://localhost:5173/game/';
     }
 
     const loginGit=async()=>{
         await supabase.auth.signInWithOAuth({
             provider:'github',
             options:{
-                redirectTo:'http://localhost:5173/home/'
+                redirectTo:'http://localhost:5173/game/'
             }
         });
        }
@@ -25,7 +26,7 @@ const LoginForm = () => {
         await supabase.auth.signInWithOAuth({
             provider:'discord',
             options:{
-                redirectTo:'http://localhost:5173/home/'
+                redirectTo:'http://localhost:5173/game/'
             }
         });
        }
